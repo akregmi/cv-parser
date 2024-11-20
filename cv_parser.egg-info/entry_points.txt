@@ -1,0 +1,2 @@
+[console_scripts]
+parsecv = cv_parser.commands:main

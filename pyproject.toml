@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv-parser"
+version = "0.1.0"
+description = "A tool to parse and edit cover letters."
+authors = [
+    { name = "Aayush", email = "akregmi@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["cli", "cover letter", "automation"]
+requires-python = ">=3.7"
+
+dependencies = [
+    "argparse",
+    "python-docx",
+    "python-docx-replace"
+]
+
+[project.scripts]
+parsecv = "cv_parser.commands:main"

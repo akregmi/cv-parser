@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+cv_parser/__init__.py
+cv_parser/commands.py
+cv_parser/cvparser.py
+cv_parser.egg-info/PKG-INFO
+cv_parser.egg-info/SOURCES.txt
+cv_parser.egg-info/dependency_links.txt
+cv_parser.egg-info/entry_points.txt
+cv_parser.egg-info/requires.txt
+cv_parser.egg-info/top_level.txt
