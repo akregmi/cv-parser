@@ -2,8 +2,10 @@ Metadata-Version: 2.1
 Name: cv-parser
 Version: 0.1.0
 Summary: A tool to parse and edit cover letters.
-Author-email: Aayush <akregmi@gmail.com>
+Author-email: akregmi <akregmi@gmail.com>
 License: MIT
+Project-URL: Homepage, https://github.com/akregmi/cv-parser
+Project-URL: Issues, https://github.com/akregmi/cv-parser/issues
 Keywords: cli,cover letter,automation
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown

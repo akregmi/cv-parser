@@ -7,7 +7,7 @@ name = "cv-parser"
 version = "0.1.0"
 description = "A tool to parse and edit cover letters."
 authors = [
-    { name = "Aayush", email = "akregmi@gmail.com" }
+    { name = "akregmi", email = "akregmi@gmail.com" }
 ]
 license = { text = "MIT" }
 readme = "README.md"
@@ -22,3 +22,7 @@ dependencies = [
 
 [project.scripts]
 parsecv = "cv_parser.commands:main"
+
+[project.urls]
+Homepage = "https://github.com/akregmi/cv-parser"
+Issues = "https://github.com/akregmi/cv-parser/issues"
