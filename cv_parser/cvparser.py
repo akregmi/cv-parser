@@ -3,19 +3,19 @@ import json
 import shutil
 from docx import Document
 from python_docx_replace import docx_replace
-import cv_parser
 
 class CVParser:
 
     def __init__(self):
         self.templateInfo = {}
         self.templateDir = path.dirname(path.abspath(__file__))+'/CV-Templates'
+        print(self.templateDir)
         if path.exists(f'{self.templateDir}/info.json'):
             self.templateInfo = json.load(open(f'{self.templateDir}/info.json'))
         else:
             if not path.exists(self.templateDir): os.makedirs(self.templateDir)
     
-    def addTemplate(self, filepath, TemplateName):
+    def addTemplate(self, filepath: str, TemplateName: str):
         if path.exists(filepath) and path.splitext(filepath)[1] == '.docx':
             self.templateInfo[TemplateName] = path.dirname(path.abspath(filepath))
             shutil.copy2(filepath, f'{self.templateDir}/{TemplateName}.docx')
@@ -35,3 +35,7 @@ class CVParser:
         docx_replace(doc, Company=company, Position=position)
         doc.save(output)
         return path.abspath(output)
+    
+    def getTemplateTitles(self) -> list[str]:
+        return list(self.templateInfo.keys())
+    

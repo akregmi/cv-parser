@@ -16,6 +16,7 @@ requires-python = ">=3.7"
 
 dependencies = [
     "argparse",
+    "pick",
     "python-docx",
     "python-docx-replace"
 ]

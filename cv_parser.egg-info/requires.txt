@@ -1,3 +1,4 @@
 argparse
+pick
 python-docx
 python-docx-replace

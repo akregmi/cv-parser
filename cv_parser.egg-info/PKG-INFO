@@ -10,5 +10,6 @@ Keywords: cli,cover letter,automation
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 Requires-Dist: argparse
+Requires-Dist: pick
 Requires-Dist: python-docx
 Requires-Dist: python-docx-replace
